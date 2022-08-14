@@ -2,12 +2,60 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="258.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFromController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFromController">
     <children>
-        <JFXTextField fx:id="txtUserName" layoutX="126.0" layoutY="104.0" />
-        <JFXButton layoutX="168.0" layoutY="173.0" onAction="#btnLoginOnAction" text="Login" />
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/5172658.jpg" />
+         </image>
+      </ImageView>
+        <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="221.0" layoutY="162.0" promptText="ex:- Kasun" unFocusColor="#d3009f">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font></JFXTextField>
+        <JFXButton buttonType="RAISED" layoutX="264.0" layoutY="240.0" onAction="#btnLoginOnAction" style="-fx-background-color: #8e44ad; -fx-background-radius: 15;" text="L o g i n" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></JFXButton>
+      <Label layoutX="264.0" layoutY="32.0" prefWidth="92.0" text="Login!">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4831460674157303" centerY="0.485576923076923" radius="0.5">
+               <stops>
+                  <Stop color="#b82a31" />
+                  <Stop color="#b82a31" offset="0.2817262751473278" />
+                  <Stop color="#562ab8" offset="0.5639097744360901" />
+                  <Stop color="#b82a2d" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label focusTraversable="false" layoutX="135.0" layoutY="168.0" text="Name">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.25">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="RED" offset="0.03383458646616541" />
+                  <Stop color="RED" offset="0.34962406015037595" />
+                  <Stop color="RED" offset="0.7031853281853276" />
+                  <Stop color="#00d9ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
     </children>
 </AnchorPane>
