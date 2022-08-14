@@ -7,19 +7,42 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+<AnchorPane prefHeight="470.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
     <children>
-        <Label fx:id="lblUser" layoutX="123.0" layoutY="6.0" prefHeight="17.0" prefWidth="93.0" text="Kasun" />
-        <JFXTextField fx:id="txtTextField" layoutX="62.0" layoutY="341.0" prefHeight="25.0" prefWidth="385.0" />
-        <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="341.0" onAction="#sendOnAction" text="send" />
-        <ScrollPane layoutX="46.0" layoutY="55.0" prefHeight="255.0" prefWidth="481.0">
+      <Pane prefHeight="45.0" prefWidth="643.0" style="-fx-background-color: #3498db;">
+         <children>
+              <Label fx:id="lblUser" layoutX="276.0" layoutY="8.0" prefHeight="17.0" prefWidth="93.0" text="Kasun" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#b82a2d" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+        <JFXTextField fx:id="txtTextField" layoutX="52.0" layoutY="405.0" prefHeight="27.0" prefWidth="400.0" />
+        <JFXButton buttonType="RAISED" layoutX="541.0" layoutY="404.0" onAction="#sendOnAction" style="-fx-background-color: #27ae60; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="send">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></JFXButton>
+        <ScrollPane layoutX="6.0" layoutY="55.0" prefHeight="330.0" prefWidth="630.0">
             <content>
-                <VBox fx:id="vBox" prefHeight="241.0" prefWidth="428.0" />
+                <VBox fx:id="vBox" prefHeight="316.0" prefWidth="449.0" />
             </content>
         </ScrollPane>
-        <ImageView fx:id="imgSendImages" fitHeight="25.0" fitWidth="25.0" layoutX="422.0" layoutY="341.0" onMouseClicked="#sendImgClicked">
+        <ImageView fx:id="imgSendImages" fitHeight="25.0" fitWidth="25.0" layoutX="421.0" layoutY="405.0" onMouseClicked="#sendImgClicked">
             <image>
                 <Image url="@../assests/camera.png" />
             </image>

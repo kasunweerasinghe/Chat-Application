@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,7 +17,8 @@ import java.io.IOException;
  * @Project : Chat-Application-Using-Socket-Programming
  **/
 public class LoginFromController {
-    public JFXTextField txtUserName;
+//    public JFXTextField txtUserName;
+    public TextField txtUserName;
 
     public static String userName;
 
