@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
     <children>
-        <Label fx:id="lblUser" layoutX="123.0" layoutY="6.0" prefHeight="17.0" prefWidth="93.0" text="Label" />
+        <Label fx:id="lblUser" layoutX="123.0" layoutY="6.0" prefHeight="17.0" prefWidth="93.0" text="Kasun" />
         <JFXTextField fx:id="txtTextField" layoutX="62.0" layoutY="341.0" prefHeight="25.0" prefWidth="385.0" />
         <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="341.0" onAction="#sendOnAction" text="send" />
         <ScrollPane layoutX="46.0" layoutY="55.0" prefHeight="255.0" prefWidth="481.0">
