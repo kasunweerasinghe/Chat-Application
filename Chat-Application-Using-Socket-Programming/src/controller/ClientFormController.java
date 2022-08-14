@@ -10,6 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
@@ -33,6 +34,7 @@ public class ClientFormController extends Thread{
     public Label lblUser;
     public FileChooser chooser;
     public File path;
+    public Pane emojiPane;
     private Socket socket;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
@@ -42,6 +44,7 @@ public class ClientFormController extends Thread{
     private PrintWriter printWriter;
 
     public void initialize() throws IOException {
+        emojiPane.setVisible(false);
 
         String userName = LoginFromController.userName;
         lblUser.setText(userName);
@@ -164,6 +167,22 @@ public class ClientFormController extends Thread{
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void emoji1OnAction(MouseEvent mouseEvent) {
+        txtTextField.appendText("\uD83D\uDE42");
+    }
+
+    public void emoji2OnAction(MouseEvent mouseEvent) {
+        txtTextField.appendText("\uD83D\uDE01");
+    }
+
+    public void openEmojiPaneOnAction(MouseEvent mouseEvent) {
+        if (!emojiPane.isVisible()) {
+            emojiPane.setVisible(true);
+        } else {
+            emojiPane.setVisible(false);
         }
     }
 }
