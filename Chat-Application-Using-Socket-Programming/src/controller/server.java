@@ -31,9 +31,6 @@ public class server {
 
         }
 
-        //  server server = new server(serverSocket);
-        //  server.startServer();
-
 
     }
 }

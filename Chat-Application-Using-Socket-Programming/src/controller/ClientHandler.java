@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class ClientHandler extends Thread {
 
     public static ArrayList<ClientHandler> clientHandlers;
-    // public static ArrayList<ClientHandler>clientHandlers = new ArrayList<>();
     private Socket socket;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
@@ -31,27 +30,29 @@ public class ClientHandler extends Thread {
 
         }catch (IOException e){
             e.printStackTrace();
+
         }
     }
 
 
-
     public void run() {
 
-        try {
+        try{
             String massage;
             while ((massage = bufferedReader.readLine()) != null) {
-                if (massage.equalsIgnoreCase("exit")) {
+                if(massage.equalsIgnoreCase("exit")) {
                     break;
                 }
 
-                for (ClientHandler c : clientHandlers) {
+                for(ClientHandler c : clientHandlers) {
                     c.printWriter.println(massage);
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
+        }
+
+        finally {
             try {
                 bufferedReader.close();
                 printWriter.close();
@@ -63,4 +64,5 @@ public class ClientHandler extends Thread {
 
 
     }
+
 }
