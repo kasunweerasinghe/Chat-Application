@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -8,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -35,12 +37,11 @@ public class ClientFormController extends Thread{
     public FileChooser chooser;
     public File path;
     public Pane emojiPane;
+
     private Socket socket;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
-
     private String username;
-
     private PrintWriter printWriter;
 
     public void initialize() throws IOException {
@@ -60,7 +61,6 @@ public class ClientFormController extends Thread{
         }
 
     }
-
 
     public void sendOnAction(ActionEvent actionEvent) {
         String massage = txtTextField.getText();
@@ -185,4 +185,5 @@ public class ClientFormController extends Thread{
             emojiPane.setVisible(false);
         }
     }
+
 }

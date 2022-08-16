@@ -13,7 +13,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="581.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+<AnchorPane prefHeight="493.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
     <children>
       <Pane prefHeight="45.0" prefWidth="643.0" style="-fx-background-color: #3498db;">
          <children>
@@ -47,7 +47,7 @@
          </ripplerFill></JFXButton>
         <ScrollPane layoutX="6.0" layoutY="55.0" prefHeight="330.0" prefWidth="630.0">
             <content>
-                <VBox fx:id="vBox" prefHeight="326.0" prefWidth="449.0" />
+                <VBox fx:id="vBox" prefHeight="327.0" prefWidth="479.0" />
             </content>
         </ScrollPane>
         <ImageView fx:id="imgSendImages" fitHeight="25.0" fitWidth="25.0" layoutX="421.0" layoutY="439.0" onMouseClicked="#sendImgClicked">

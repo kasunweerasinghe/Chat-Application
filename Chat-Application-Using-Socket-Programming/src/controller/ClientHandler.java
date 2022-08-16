@@ -27,16 +27,13 @@ public class ClientHandler extends Thread {
             this.bufferedReader= new BufferedReader(new InputStreamReader(socket.getInputStream()));
             this.printWriter=new PrintWriter(socket.getOutputStream(),true);
 
-
         }catch (IOException e){
             e.printStackTrace();
 
         }
     }
 
-
     public void run() {
-
         try{
             String massage;
             while ((massage = bufferedReader.readLine()) != null) {
@@ -61,8 +58,6 @@ public class ClientHandler extends Thread {
                 e.printStackTrace();
             }
         }
-
-
     }
 
 }

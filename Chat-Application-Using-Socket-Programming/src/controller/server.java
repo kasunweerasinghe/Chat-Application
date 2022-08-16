@@ -16,7 +16,6 @@ public class server {
 
     private static ArrayList<ClientHandler> clientHandlers = new ArrayList<>();
 
-
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(10001);
         Socket accept;
@@ -30,7 +29,6 @@ public class server {
             clientHandler.start();
 
         }
-
 
     }
 }

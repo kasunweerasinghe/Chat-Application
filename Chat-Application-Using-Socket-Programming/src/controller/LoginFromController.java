@@ -17,11 +17,9 @@ import java.io.IOException;
  * @Project : Chat-Application-Using-Socket-Programming
  **/
 public class LoginFromController {
-//    public JFXTextField txtUserName;
+
     public TextField txtUserName;
-
     public static String userName;
-
 
     public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
         userName =txtUserName.getText();
