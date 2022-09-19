@@ -1,14 +1,17 @@
 # Chat-Application
 This Project is based on INP Course Work Chat-Application-Using-Socket-Programming.
 
+
 Login Interface.
 
-<img width="600" alt="Screenshot 2022-08-16 at 6 21 57 PM" src="https://user-images.githubusercontent.com/84431272/185035664-403b3fab-6024-46cd-9af3-6ff17b9f17f2.png">
+<img width="668" alt="1  Log_In" src="https://user-images.githubusercontent.com/84431272/191032207-e9dae3d9-48a2-49bb-9b15-ef8bb0b275d2.png">
 
 
-Chat Interfaces.
+Chat Interface
 
-<img width="645" alt="Screenshot 2022-08-16 at 6 22 51 PM" src="https://user-images.githubusercontent.com/84431272/185035709-39842e80-e144-46d9-bef8-25b4f50e0f63.png">
+<img width="1309" alt="2  chat" src="https://user-images.githubusercontent.com/84431272/191032261-8379fa19-84a1-4169-96c2-a0b9ae26d80a.png">
 
-<img width="1288" alt="Screenshot 2022-08-16 at 6 25 30 PM" src="https://user-images.githubusercontent.com/84431272/185035735-7cca7931-0128-4144-a29c-01767d416cc8.png">
 
+After Exit from Chat
+
+<img width="755" alt="3  After Exit chat" src="https://user-images.githubusercontent.com/84431272/191032314-e1049982-2473-478d-a7d4-6f5311e09078.png">
